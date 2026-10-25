@@ -1,0 +1,8 @@
+{
+  "name": "CampusCircle",
+  "description": "Student accommodation discovery, flatmate compatibility matching, and free peer-to-peer textbook exchange platform for Indian college campuses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

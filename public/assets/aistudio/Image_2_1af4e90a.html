@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>CampusCircle</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#005049","background":"#faf8ff","surface-container-highest":"#dae2fd","inverse-primary":"#6bd8cb","on-tertiary-fixed":"#2a1700","surface-tint":"#006a61","on-secondary-fixed":"#0f0069","surface-variant":"#dae2fd","secondary-container":"#645efb","on-primary-fixed":"#00201d","error-container":"#ffdad6","on-background":"#131b2e","on-error-container":"#93000a","on-error":"#ffffff","on-primary":"#ffffff","surface-bright":"#faf8ff","secondary-fixed-dim":"#c3c0ff","primary":"#00685f","primary-fixed-dim":"#6bd8cb","secondary":"#4b41e1","surface-container-high":"#e2e7ff","tertiary-fixed":"#ffddb8","surface-dim":"#d2d9f4","on-tertiary-container":"#fffbff","inverse-on-surface":"#eef0ff","tertiary-fixed-dim":"#ffb95f","on-secondary":"#ffffff","outline-variant":"#bcc9c6","surface-container-low":"#f2f3ff","secondary-fixed":"#e2dfff","on-surface-variant":"#3d4947","tertiary-container":"#a36700","primary-fixed":"#89f5e7","outline":"#6d7a77","on-surface":"#131b2e","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#653e00","on-tertiary":"#ffffff","on-primary-container":"#f4fffc","on-secondary-container":"#fffbff","primary-container":"#008378","error":"#ba1a1a","tertiary":"#825100","surface-container":"#eaedff","inverse-surface":"#283044","on-secondary-fixed-variant":"#3323cc","surface":"#faf8ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter":"1rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","margin-desktop":"3rem","margin-tablet":"2rem"},fontFamily:{"title-md":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"display-mobile":["Inter"],"display":["Inter"]},fontSize:{"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-primary-fixed flex items-center justify-center p-1.5 shadow-[0_2px_6px_rgba(0,104,95,0.2)]"><svg class="w-full h-full text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8 12a4 4 0 0 1 8 0"></path><path d="M12 8a4 4 0 0 1 0 8"></path><circle cx="12" cy="12" fill="currentColor" r="1.5"></circle></svg></div><div class="flex flex-col"><div class="flex items-center gap-1"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">CampusCircle</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></div><span class="font-label-sm text-[10px] uppercase font-semibold tracking-wider text-primary">Verified Hub</span></div></div><div class="flex items-center gap-1.5"><button aria-label="Search listings" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high relative transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive & Floating Element Styles (No structural borders, strict tokens) -->
+<style>
+    @keyframes subtlePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+    .animate-badge-pulse {
+      animation: subtlePulse 4s ease-in-out infinite;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<!-- Hero Section -->
+<section class="relative px-4 pt-3 pb-6 flex flex-col gap-4 overflow-hidden">
+<!-- Ambient Backdrop Gradient Blob -->
+<div class="absolute -top-12 -right-16 w-64 h-64 rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 -left-20 w-60 h-60 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none -z-10"></div>
+<!-- Trust Indicator Pill -->
+<div class="inline-flex self-start items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface shadow-sm animate-badge-pulse">
+<span class="text-tertiary font-bold text-sm">⚡</span>
+<span class="font-label-sm text-label-sm text-on-surface tracking-normal">Trusted by 18,000+ Students across South India</span>
+</div>
+<!-- Headings -->
+<div class="flex flex-col gap-2.5">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight font-bold">
+        Find Your Place.<br/>
+        Find Your People.<br/>
+<span class="text-primary font-bold">Share Your Knowledge.</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Find affordable verified flats near campus, meet compatible flatmates with matched living habits, and access academic textbooks for free.
+      </p>
+</div>
+<!-- Dual Action CTAs -->
+<div class="flex flex-col gap-2.5 pt-1">
+<a class="w-full h-12 px-5 rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary flex items-center justify-center gap-2 shadow-md active:scale-[0.99] transition-transform" href="#services">
+<span class="font-label-md text-label-md font-semibold">Explore CampusCircle</span>
+<span class="material-symbols-outlined text-[19px]">arrow_forward</span>
+</a>
+<button class="w-full h-11 px-5 rounded-xl bg-surface-container-low text-primary flex items-center justify-center gap-2 active:bg-surface-container transition-colors shadow-sm" onclick="alert('Student verification with college domain (@annauniv.edu, @iitm.ac.in, etc.) ready!')" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<span class="font-label-md text-label-md font-semibold">Join with College ID</span>
+</button>
+</div>
+<!-- Social Proof Trust Stack -->
+<div class="flex items-center gap-3.5 pt-2 pb-1">
+<div class="flex -space-x-2.5 overflow-hidden py-1 pl-1">
+<!-- Avatar 1: Anna Univ -->
+<div class="relative w-9 h-9 rounded-full shadow-sm bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant font-label-sm text-[11px] font-bold">
+          AU
+        </div>
+<!-- Avatar 2: IIT Madras -->
+<div class="relative w-9 h-9 rounded-full shadow-sm bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant font-label-sm text-[11px] font-bold">
+          IIT
+        </div>
+<!-- Avatar 3: Christ Univ -->
+<div class="relative w-9 h-9 rounded-full shadow-sm bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-label-sm text-[11px] font-bold">
+          CU
+        </div>
+<!-- Avatar 4: BITS Hyd -->
+<div class="relative w-9 h-9 rounded-full shadow-sm bg-primary-container flex items-center justify-center text-on-primary font-label-sm text-[11px] font-bold">
+          BH
+        </div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="text-tertiary text-xs">★★★★★</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">4.9/5</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+          Anna Univ • IIT Madras • Christ • BITS
+        </p>
+</div>
+</div>
+</section>
+<!-- Flagship Services -->
+<section class="px-4 py-4 flex flex-col gap-4" id="services">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Our Flagship Pillars</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Built Exclusively for Campus Life</h2>
+</div>
+<!-- Card 1: FlatMate Service Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-4 flex flex-col gap-3.5 relative overflow-hidden">
+<!-- Top banner image for Housing -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A sunny and warm student apartment living room in Bengaluru with modern wooden desk, potted plants, beanbags, and study books under soft afternoon daylight in a high-trust clean aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI6Fm629GtBjEAfqZyfWoVkGc6JoyKufvBagsh_wJp4AKUu3RqwVGnEe4-gTbbMaB3xYYCBSsHUdRQ4ozl5W8ryykq7MI2g77GxverCIgVKzr3EGTb1JsCR1ZUP3Hd-7LvL5UPRCaqpVZdGVuzBQcbp6sAnOvN8kDd9us5yR46jWxpP5VLraHubBi4XnuTuFfdKC565EbbEv-586ep6Ck5uhj6-wz9RTj1yU905WSnIs8h90opvcLO"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-[11px] font-semibold tracking-wide uppercase shadow-sm">
+            Housing &amp; Living
+          </span>
+</div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-sm text-on-surface font-label-sm text-[10px] flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+          Verified PGs &amp; Flats
+        </div>
+</div>
+<!-- Content -->
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Find Your Room &amp; Flatmates</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Verified bachelor-friendly rooms, no broker brokerage, split rent, and match lifestyle habits with college peers.
+        </p>
+</div>
+<!-- Feature Badges List -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[17px]">percent</span>
+</div>
+<span class="font-label-md text-label-md font-medium">0% Brokerage • Direct Senior Connections</span>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[17px]">near_me</span>
+</div>
+<span class="font-label-md text-label-md font-medium">College Proximity Filters (&lt;2 km Radius)</span>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="w-7 h-7 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[17px]">diversity_3</span>
+</div>
+<span class="font-label-md text-label-md font-medium">Lifestyle Compatibility Match (Diet, Sleep, Study)</span>
+</div>
+</div>
+<!-- Action Button -->
+<a class="mt-1 w-full h-11 rounded-xl bg-primary text-on-primary flex items-center justify-center gap-2 font-label-md text-label-md font-semibold active:opacity-90 shadow-sm" href="#">
+<span>Explore Flats &amp; Rooms</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2: BookBridge Service Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-md p-4 flex flex-col gap-3.5 relative overflow-hidden">
+<!-- Top banner image for Academic Circularity -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A neat stack of university engineering textbooks and academic lecture notes on a wooden library table with warm natural light pouring through tall campus glass windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWUQ0jf6pY-UDC0EhXNEi71BETd6e6lozYVhAiSJ_u1yBmtz-Q0i4qA5AfPBTEvD16n-yrDtUP4e-vxS54BvHqZH0pRV8n-YNI0rSDXd_thfTpAKC3xJ87uEDf77EPs0BCCYPdc6t0YOsgkGAHBBbfxPvlLW14Eet2RR4qzzP_WJsPlKgIpMkDJk5v7qG-cBrFpHpAW1oCe02c2oe81FILfSed33kHnbC9gfS41CQYae86irDhynyR"/>
+<div class="absolute top-2.5 left-2.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-[11px] font-semibold tracking-wide uppercase shadow-sm">
+            Academic Circularity
+          </span>
+</div>
+<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-sm text-secondary font-label-sm text-[10px] flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+          100% Free Sharing
+        </div>
+</div>
+<!-- Content -->
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Books Deserve a Second Chapter</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Give old semester textbooks a new life or request reference materials from seniors across departments completely free.
+        </p>
+</div>
+<!-- Feature Badges List -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[17px]">swap_horiz</span>
+</div>
+<span class="font-label-md text-label-md font-medium">Free Donations &amp; Direct Campus Swaps</span>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[17px]">filter_list</span>
+</div>
+<span class="font-label-md text-label-md font-medium">Semester, Branch &amp; Course Code Filter</span>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-low text-on-surface">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[17px]">pin_drop</span>
+</div>
+<span class="font-label-md text-label-md font-medium">Campus Safe Pickup Spots (Hostel • Canteen)</span>
+</div>
+</div>
+<!-- Action Button -->
+<a class="mt-1 w-full h-11 rounded-xl bg-secondary text-on-secondary flex items-center justify-center gap-2 font-label-md text-label-md font-semibold active:opacity-90 shadow-sm" href="#">
+<span>Browse Textbook Exchange</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- City Discovery Horizontal Section -->
+<section class="py-4 flex flex-col gap-3">
+<div class="px-4 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Campus Geographies</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Popular Student Hubs</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Discover verified student listings near top university campuses</p>
+</div>
+<!-- Horizontal City Scroll -->
+<div class="flex gap-3.5 overflow-x-auto px-4 pb-2 hide-scrollbar snap-x">
+<!-- Bengaluru -->
+<div class="min-w-[260px] max-w-[260px] snap-center bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col gap-3">
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant Bengaluru Koramangala student neighborhood street with green tree canopies, cozy student cafe fronts, and pleasant weather." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRvadvagYD6igyL_-cFBxYI2YFtTp_DLIbm3hR2v6p1TMKkwBRMksFJ_jJczcp_BNSj3e0mQcWqXFgoh0BOHIZTfuxqx8NbUK-8-niqBJ94tdCMm6g9IQ_2SqNiFmZOr5JLRAnuxOST1ZRzEe-13IxO2lLbTl3WMpyndoKYQoUyPzV7TfI8NjOKXsE-bi6XcUshyEf7yDclhmuZGZs9XaG3AbcMzwKoyp_BFZi7zaSPBbNDABsecEw"/>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded-full text-on-surface font-label-sm text-[11px] font-semibold">
+            420+ Listings
+          </div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface">Bengaluru</h4>
+<span class="font-label-sm text-primary font-semibold">Active Hub</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Koramangala, Electronic City, HSR</p>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-primary">school</span>
+<span>Christ Univ, IISc, PESIT</span>
+</div>
+</div>
+</div>
+<!-- Chennai -->
+<div class="min-w-[260px] max-w-[260px] snap-center bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col gap-3">
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Chennai city view around Guindy and Velachery with lush campus tree line and coastal morning sky under pleasant sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRLN8MTg9kCMn2uYDrZMO1yTibAQEEXPDQmauZeAFDj_9O68Euw8A8c5JWRTC6UTQfjUjNZFhhH4_qHi-1Up1kjZjSPdSQZJidb0eiiqTwYfOrVArZKzq9lWY2FNHOoKG_DumUud9_lqtk2W2trhnoZI7RjHA9-dd0pS3V35mcvxqH-lDTYnjT2hDVjW_Cc8_y-ohsG28facW0Ztw8IknX7nD4nfQU0a25_9VFDlNYq73_zNWPXRsa"/>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded-full text-on-surface font-label-sm text-[11px] font-semibold">
+            380+ Listings
+          </div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface">Chennai</h4>
+<span class="font-label-sm text-primary font-semibold">Popular</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Velachery, Guindy, OMR, Adyar</p>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-primary">school</span>
+<span>Anna Univ, IITM, SRM</span>
+</div>
+</div>
+</div>
+<!-- Hyderabad -->
+<div class="min-w-[260px] max-w-[260px] snap-center bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col gap-3">
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Hyderabad Gachibowli modern university student corridor with tech park views and calm residential student communities." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP1Qg_GeEqKXdEb6AScmMnleOmLSJUG_SOIyxuR8W_8Bq9NgzCiyAmeJwsh2DoafQQr9VVTN6iKhnlF0A0tHUrtJezfXQgoSr15gZWwVUvKFkZBSCCia5mHHFn0HNfFJITqS6NSjzPKIupOOz_z8ajVS9NsJ0unSJaw-evEKs0z2Af6aTyUql1iLNyiCuW4oQGe--GpI74nU04mZjBjsM4vMc3OnRhwR9S-dA07wsHX0iOLC0eHzdR"/>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded-full text-on-surface font-label-sm text-[11px] font-semibold">
+            290+ Listings
+          </div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface">Hyderabad</h4>
+<span class="font-label-sm text-primary font-semibold">Fast Growing</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Gachibowli, Madhapur, Hitec City</p>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-primary">school</span>
+<span>UoH, BITS Hyd, IIIT-H</span>
+</div>
+</div>
+</div>
+<!-- Coimbatore -->
+<div class="min-w-[260px] max-w-[260px] snap-center bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex flex-col gap-3">
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Coimbatore educational hub near Peelamedu with scenic Western Ghats silhouettes in the far background and clean college avenues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCr8HQNIWLZmaVQ64-Ri5w_i2vAXx3BzuN0kybtmgVP8RX0NB2idK9ddqY7i40daTLzJ4_FEJPPiLzVMPyD8Oq8xEwbJ6HOJdo4oCciqi0rlX6VhALn9G2JHcoKAw1dHUQQY2bx05agQsurfHwQN8il2w-msB2digbxh49AGSUAbbmKpYbkQfY48VX_PcdOGBKLYcUk02ZyaG2dyqsHp-DHXOPu2P0I3MKEnARMiPfPz6HXsnJ15EF9"/>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded-full text-on-surface font-label-sm text-[11px] font-semibold">
+            190+ Listings
+          </div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-title-md text-title-md text-on-surface">Coimbatore</h4>
+<span class="font-label-sm text-primary font-semibold">High Trust</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Peelamedu, Gandhipuram, Saravanampatti</p>
+<div class="flex items-center gap-1.5 pt-1 text-on-surface-variant font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[15px] text-primary">school</span>
+<span>PSG Tech, CIT, Kumaraguru</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Community Impact Banner -->
+<section class="px-4 py-4">
+<div class="w-full bg-gradient-to-br from-primary-container via-primary to-on-primary-fixed-variant rounded-2xl p-5 text-on-primary shadow-lg flex flex-col gap-4 relative overflow-hidden">
+<!-- Decorative background icon -->
+<span class="material-symbols-outlined absolute -right-6 -bottom-6 text-[120px] text-white/10 pointer-events-none select-none">savings</span>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-sm text-on-primary font-label-sm text-[11px] uppercase tracking-wider font-semibold">
+          Real Campus Impact
+        </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-display-mobile text-display-mobile font-bold tracking-tight leading-none text-white">
+          ₹42 Lakhs+
+        </span>
+<span class="font-body-md text-body-md text-primary-fixed leading-tight">
+          Saved in student brokerage &amp; textbook costs
+        </span>
+</div>
+<!-- Stats Grid -->
+<div class="grid grid-cols-2 gap-3 pt-2">
+<div class="flex flex-col p-3 rounded-xl bg-white/10 backdrop-blur-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">bed</span>
+<span class="font-title-md text-title-md font-bold text-white">1,450+</span>
+</div>
+<span class="font-body-sm text-body-sm text-white/80">Rooms Occupied</span>
+</div>
+<div class="flex flex-col p-3 rounded-xl bg-white/10 backdrop-blur-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">auto_stories</span>
+<span class="font-title-md text-title-md font-bold text-white">6,200+</span>
+</div>
+<span class="font-body-sm text-body-sm text-white/80">Books Circulated</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Delight Section -->
+<section class="px-4 py-3 flex flex-col gap-3">
+<div class="w-full bg-surface-container-low rounded-xl p-4 shadow-sm flex flex-col gap-3 relative">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-title-md text-[14px]">
+            AR
+          </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface">Ananya R.</span>
+<span class="material-symbols-outlined text-primary text-[16px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Anna University • 3rd Year CSE</span>
+</div>
+</div>
+<div class="flex text-tertiary text-xs">
+          ★★★★★
+        </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+        “Found my 2BHK flatmate in Thiruvanmiyur and all my Semester 5 core textbooks in one weekend! No broker calls, just genuine college peers.”
+      </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-[11px]">Matched in 48 hrs</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-[11px]">Saved ₹14,000</span>
+</div>
+</div>
+</section>
+<!-- Footer Quick Action Banner -->
+<section class="px-4 pt-3 pb-6">
+<div class="w-full bg-surface-container-highest rounded-2xl p-4 flex flex-col gap-3 text-center shadow-sm">
+<div class="flex flex-col items-center gap-1">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm mb-1">
+<span class="material-symbols-outlined text-[22px]">add_circle</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface">Have an empty room or spare books?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+          Help a junior settle in or pass forward your semester syllabus materials in under 2 minutes.
+        </p>
+</div>
+<div class="flex flex-col gap-2 pt-1">
+<button class="w-full h-11 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm active:scale-[0.99] transition-transform" onclick="alert('Opening Listing Creation Modal...')" type="button">
+          Post a Listing or Donate a Book
+        </button>
+<span class="font-label-sm text-[11px] text-on-surface-variant">
+          100% Free for all verified university students
+        </span>
+</div>
+</div>
+</section>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(19,27,46,0.04)]" data-active-classes="text-primary [&amp;_.tab-indicator]:scale-100 [&amp;_.tab-icon]:fill-[1]"><div class="flex justify-around items-center h-16 px-1.5 max-w-lg mx-auto"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 transition-all text-primary [&amp;_.tab-indicator]:scale-100 [&amp;_.tab-icon]:fill-[1]" data-path="home" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">home</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="dashboard" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">dashboard</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Dashboard</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="flats" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">apartment</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Flats</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="flatmates" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">group</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Flatmates</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="books" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">menu_book</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Books</span></a></div></nav></body></html>

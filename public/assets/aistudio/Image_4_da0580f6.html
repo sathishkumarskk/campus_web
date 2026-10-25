@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>CampusCircle</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;font-family:'Inter',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed-variant":"#005049","background":"#faf8ff","surface-container-highest":"#dae2fd","inverse-primary":"#6bd8cb","on-tertiary-fixed":"#2a1700","surface-tint":"#006a61","on-secondary-fixed":"#0f0069","surface-variant":"#dae2fd","secondary-container":"#645efb","on-primary-fixed":"#00201d","error-container":"#ffdad6","on-background":"#131b2e","on-error-container":"#93000a","on-error":"#ffffff","on-primary":"#ffffff","surface-bright":"#faf8ff","secondary-fixed-dim":"#c3c0ff","primary":"#00685f","primary-fixed-dim":"#6bd8cb","secondary":"#4b41e1","surface-container-high":"#e2e7ff","tertiary-fixed":"#ffddb8","surface-dim":"#d2d9f4","on-tertiary-container":"#fffbff","inverse-on-surface":"#eef0ff","tertiary-fixed-dim":"#ffb95f","on-secondary":"#ffffff","outline-variant":"#bcc9c6","surface-container-low":"#f2f3ff","secondary-fixed":"#e2dfff","on-surface-variant":"#3d4947","tertiary-container":"#a36700","primary-fixed":"#89f5e7","outline":"#6d7a77","on-surface":"#131b2e","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#653e00","on-tertiary":"#ffffff","on-primary-container":"#f4fffc","on-secondary-container":"#fffbff","primary-container":"#008378","error":"#ba1a1a","tertiary":"#825100","surface-container":"#eaedff","inverse-surface":"#283044","on-secondary-fixed-variant":"#3323cc","surface":"#faf8ff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","gutter":"1rem","space-sm":"0.5rem","space-md":"1rem","margin":"1rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-lg":"1.5rem","margin-desktop":"3rem","margin-tablet":"2rem"},fontFamily:{"title-md":["Inter"],"headline-lg":["Inter"],"headline-lg-mobile":["Inter"],"body-md":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"],"label-sm":["Inter"],"display-mobile":["Inter"],"display":["Inter"]},fontSize:{"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}]}}}</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-full bg-gradient-to-tr from-primary to-primary-fixed flex items-center justify-center p-1.5 shadow-[0_2px_6px_rgba(0,104,95,0.2)]"><svg class="w-full h-full text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M8 12a4 4 0 0 1 8 0"></path><path d="M12 8a4 4 0 0 1 0 8"></path><circle cx="12" cy="12" fill="currentColor" r="1.5"></circle></svg></div><div class="flex flex-col"><div class="flex items-center gap-1"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">CampusCircle</span><span class="w-1.5 h-1.5 rounded-full bg-primary"></span></div><span class="font-label-sm text-[10px] uppercase font-semibold tracking-wider text-primary">Verified Hub</span></div></div><div class="flex items-center gap-1.5"><button aria-label="Search listings" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:bg-surface-container-high relative transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Map Preview Backdrop (Collapsible Drawer Pattern) -->
+<div class="hidden w-full h-56 relative overflow-hidden transition-all duration-300" id="map-drawer">
+<div class="w-full h-full bg-cover bg-center" data-location="Anna University, Guindy, Chennai" style=""></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm">34 active campus clusters</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-md flex items-center justify-center text-on-surface hover:bg-surface-container" onclick="toggleMap()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Page Header & Search Section -->
+<section class="px-4 pt-3 pb-2 flex flex-col gap-2">
+<div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Find a Flat &amp; Room</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Verified student-friendly stays near top university campuses</p>
+</div>
+<!-- Search Input Bar -->
+<div class="relative w-full mt-1">
+<div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest rounded-xl font-body-sm text-body-sm text-on-surface placeholder:text-outline shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-bright transition-all" placeholder="Search city, college (e.g. IIT Madras, Anna Univ)..." type="search"/>
+<div class="absolute inset-y-0 right-0 pr-3 flex items-center">
+<button aria-label="Use current campus location" class="text-outline hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">my_location</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 -mx-4 px-4">
+<button class="flex items-center gap-1.5 shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm shadow-sm active:scale-95 transition-transform" type="button">
+<span>📍 Chennai</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+        Rent: Under ₹8,000
+      </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+        Room: Private Room
+      </button>
+<button class="shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+        &lt; 2 km from Campus
+      </button>
+<button class="flex items-center gap-1 shrink-0 px-3 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span>Verified Only</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<button class="flex items-center gap-1.5 shrink-0 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Filters (4)</span>
+</button>
+</div>
+</section>
+<!-- Feed Toolbar / Meta Controls -->
+<section class="px-4 py-2 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">34 Verified Student Flats</span>
+<span class="inline-flex w-1.5 h-1.5 rounded-full bg-primary"></span>
+</div>
+<div class="flex items-center gap-2">
+<!-- Sort Dropdown Trigger -->
+<button class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors" type="button">
+<span>Distance to Campus</span>
+<span class="material-symbols-outlined text-[16px]">swap_vert</span>
+</button>
+<!-- Map View Toggle Button -->
+<button aria-label="Toggle map view preview" class="w-8 h-8 rounded-lg bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center hover:bg-surface-container transition-colors" id="map-toggle-btn" onclick="toggleMap()" type="button">
+<span class="material-symbols-outlined text-[19px]">map</span>
+</button>
+</div>
+</section>
+<!-- Accommodation Listing Cards Stack -->
+<section class="px-4 pt-1 pb-16 flex flex-col gap-4">
+<!-- Card 1: Spacious 3BHK Private Room in Velachery -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-md">
+<!-- Image Carousel / Media Frame -->
+<div class="relative w-full aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Sunlit minimalist student bedroom in Chennai with wooden study table, ergonomic chair, neatly made single bed, warm ambient afternoon lighting, modern teal shelf with textbooks, clean white walls, and a large window overlooking lush green campus trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiuaeZTu6VhDh2jgPmIfzhqkr8dIjlLPn9qkId4GP21yxVm8mCcW3Z0w90HqEFthslHUMEPdJ6x5BwvrFb8lcRqjPjVA3r-OQcb5XObmLtO3Cm6qb6SvRwsddzpEXEl9CBKy6ahYUMX3yKBNVuWC4P2jZUNQIHYgofeYn76TXdb9nOKPaDyoNNx_lOHyznUxngYJOUvWX7OScde9iHoNQEhQZbaBSqkf0uwWZt-90zhyoEGjEC6KS-"/>
+<!-- Top Overlay Tags -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-1.5">
+<span class="bg-primary/95 text-on-primary font-label-sm text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+              Verified Student Listing
+            </span>
+<span class="bg-secondary text-on-secondary font-label-sm text-[11px] font-medium px-2 py-1 rounded-full shadow-sm">
+              No Brokerage
+            </span>
+</div>
+<button aria-label="Save this listing" class="pointer-events-auto w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-sm flex items-center justify-center active:scale-90 transition-transform hover:text-error" onclick="toggleSave(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<!-- Carousel Micro Indicator & Gallery Count -->
+<div class="absolute bottom-2.5 right-3 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded-md font-label-sm text-[11px] flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[12px]">photo_camera</span>
+<span>1/6</span>
+</div>
+</div>
+<!-- Card Content Area -->
+<div class="p-3.5 flex flex-col gap-2">
+<!-- Price & Deposit Row -->
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">₹7,500</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">/ month</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Deposit: ₹15,000</span>
+</div>
+<!-- Title & Room Scope -->
+<div class="flex flex-col">
+<h2 class="font-title-md text-title-md text-on-surface line-clamp-1">Spacious 3BHK Private Room in Velachery</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Private Room in Shared Flat • Male/Female Friendly</span>
+</div>
+<!-- Proximity Pill -->
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-primary text-[17px]">school</span>
+<span class="font-body-sm text-body-sm font-medium">1.6 km from Anna University Guindy Campus</span>
+</div>
+<!-- Amenities Badges Row -->
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">wifi</span>
+            High-speed Wi-Fi
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">shower</span>
+            Attached Bath
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">skillet</span>
+            Cook Available
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">ac_unit</span>
+            AC
+          </span>
+</div>
+<!-- Availability & Primary CTA -->
+<div class="pt-2 flex items-center justify-between gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+<span class="font-label-sm text-label-sm">Available from July 1st</span>
+</div>
+<button class="h-9 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 hover:bg-primary-container transition-all flex items-center gap-1" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Twin Sharing Room in Adyar (Bachelors Welcome) -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-md">
+<!-- Image Frame -->
+<div class="relative w-full aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Clean and cheerful twin-sharing student apartment living room in Adyar Chennai with airy balcony, potted indoor plants, organized study bookshelves, twin single cot beds visible, soft natural morning sunlight and ceramic tiled floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1UhAjxCYwVHXLBAOCyl3s6iQ9sBWXhE9a1o_eUYbCfPabIQIuD8-MgDsHnUvVGH0CvIHByNvlPBf2J9xCo231jDIf8_Y7kTstKA8zwMCRPMaxeel7mtOu2z9T5jnU8a3VdCBDsL0a4ePA-LpzWfcXOTCv9QrCrD2T4H38Za5WWngR99Wo27z94AFWWlN4aTPFu_aK2kgIJluKOcIe6o0rouGli-grIwRVuoDodJPxTsoJBOdiJ9J5"/>
+<!-- Top Badges -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between pointer-events-none">
+<span class="bg-primary-container text-on-primary-container font-label-sm text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+            Verified by Senior ✓
+          </span>
+<button aria-label="Save this listing" class="pointer-events-auto w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-sm flex items-center justify-center active:scale-90 transition-transform hover:text-error" onclick="toggleSave(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-2.5 right-3 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded-md font-label-sm text-[11px] flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[12px]">photo_camera</span>
+<span>1/4</span>
+</div>
+</div>
+<!-- Card Content -->
+<div class="p-3.5 flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">₹5,200</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">/ month</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Deposit: ₹10,000</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-md text-title-md text-on-surface line-clamp-1">Twin Sharing Room in Adyar (Bachelors Welcome)</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Shared Room (2 Beds) • Vegetarian Kitchen</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-primary text-[17px]">directions_walk</span>
+<span class="font-body-sm text-body-sm font-medium">900m from IIT Madras In-gate</span>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">wifi</span>
+            Wi-Fi Included
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">local_laundry_service</span>
+            Washing Machine
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">two_wheeler</span>
+            Bike Parking
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm font-medium text-primary">Immediate Move-in</span>
+</div>
+<button class="h-9 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 hover:bg-primary-container transition-all flex items-center gap-1" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Independent 1RK Studio near T. Nagar -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-md">
+<!-- Image Frame -->
+<div class="relative w-full aspect-[16/10] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Modern compact studio apartment 1RK interior near T Nagar with sleek kitchenette, smart work-from-home desk setup, wall storage, warm pendant light, tasteful contemporary student decor and polished floor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuANIBqzyq6JVpAw6xbJoMqjOtq7ln1BEqxJlHJIoUuuYqUAOfenyu9krPrdhyTL0kNIQLfOs2qnRQokicObQJKOlK62ekINhBB56FFQDYhyFcjGMZZSpN4aevOC3ptC38LgWsY4rgQ61lJxs54Xb8i-QmtqHe4zTvri_4Y-LnkYfhh1R6PJEwiIulQJebBGMbUV1seWe0UwN_OdMLITOU1yaQQqGMQqYZSdaCPHbr6SLkEozQo-fixx"/>
+<!-- Top Actions -->
+<div class="absolute top-3 inset-x-3 flex items-center justify-between pointer-events-none">
+<span class="bg-secondary-container text-on-secondary-container font-label-sm text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-sm backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+            ID Verified Owner
+          </span>
+<button aria-label="Save this listing" class="pointer-events-auto w-8 h-8 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface shadow-sm flex items-center justify-center active:scale-90 transition-transform hover:text-error" onclick="toggleSave(this)" type="button">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="absolute bottom-2.5 right-3 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded-md font-label-sm text-[11px] flex items-center gap-1 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[12px]">photo_camera</span>
+<span>1/8</span>
+</div>
+</div>
+<!-- Card Content -->
+<div class="p-3.5 flex flex-col gap-2">
+<div class="flex items-baseline justify-between">
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">₹9,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">/ month</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Deposit: ₹18,000</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-title-md text-title-md text-on-surface line-clamp-1">Independent 1RK Studio near T. Nagar</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Private Studio • Independent Key Access</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface">
+<span class="material-symbols-outlined text-primary text-[17px]">directions_bus</span>
+<span class="font-body-sm text-body-sm font-medium">Direct bus to Loyola &amp; Stella Maris</span>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-0.5">
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">chair</span>
+            Fully Furnished
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">bolt</span>
+            24/7 Power Backup
+          </span>
+<span class="font-label-sm text-[11px] px-2 py-1 rounded-md bg-surface-container-low text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">security</span>
+            Security Guard
+          </span>
+</div>
+<div class="pt-2 flex items-center justify-between gap-3">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">High Demand Area</span>
+</div>
+<button class="h-9 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-95 hover:bg-primary-container transition-all flex items-center gap-1" type="button">
+<span>View Details</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Delight Moment: Campus Circle Guarantee Box -->
+<div class="bg-surface-container-high rounded-xl p-4 flex items-center gap-3 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface">Zero Brokerage Guarantee</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All homes listed here are verified with university senior checks.</span>
+</div>
+</div>
+</section>
+<!-- Sticky Floating Filter Action Bar (Docked gracefully above tab nav) -->
+<div class="sticky bottom-2 inset-x-0 z-40 px-4 flex justify-center pointer-events-none">
+<button class="pointer-events-auto h-12 px-5 rounded-full bg-on-surface text-surface-bright shadow-xl flex items-center gap-2 active:scale-95 hover:bg-inverse-surface transition-all" onclick="pulseFilterNotice()" type="button">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]">tune</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide">Filter by Budget, College &amp; Amenities</span>
+<span class="w-5 h-5 rounded-full bg-primary text-on-primary font-label-sm text-[11px] font-bold flex items-center justify-center ml-0.5">3</span>
+</button>
+</div>
+</div>
+<script>
+  function toggleMap() {
+    const mapDrawer = document.getElementById('map-drawer');
+    const toggleBtn = document.getElementById('map-toggle-btn');
+    if (mapDrawer.classList.contains('hidden')) {
+      mapDrawer.classList.remove('hidden');
+      toggleBtn.classList.add('bg-primary', 'text-on-primary');
+      toggleBtn.classList.remove('bg-surface-container-lowest', 'text-primary');
+      mapDrawer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      mapDrawer.classList.add('hidden');
+      toggleBtn.classList.remove('bg-primary', 'text-on-primary');
+      toggleBtn.classList.add('bg-surface-container-lowest', 'text-primary');
+    }
+  }
+
+  function toggleSave(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isSaved = icon.style.fontVariationSettings?.includes("'FILL' 1");
+    if (isSaved) {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      btn.classList.remove('text-error');
+      btn.classList.add('text-on-surface');
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      btn.classList.add('text-error');
+      btn.classList.remove('text-on-surface');
+    }
+  }
+
+  function pulseFilterNotice() {
+    // Quick microinteraction for drawer trigger
+    const notice = document.createElement('div');
+    notice.className = 'fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface font-label-md text-label-md px-4 py-2 rounded-full shadow-lg transition-opacity duration-300 pointer-events-none flex items-center gap-2';
+    notice.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary-fixed">check</span> Filters applied: Budget &lt; ₹8K, Chennai';
+    document.body.appendChild(notice);
+    setTimeout(() => {
+      notice.style.opacity = '0';
+      setTimeout(() => notice.remove(), 300);
+    }, 1800);
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(19,27,46,0.04)]" data-active-classes="text-primary [&amp;_.tab-indicator]:scale-100 [&amp;_.tab-icon]:fill-[1]"><div class="flex justify-around items-center h-16 px-1.5 max-w-lg mx-auto"><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="home" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">home</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Home</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="dashboard" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">dashboard</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Dashboard</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 transition-all text-primary [&amp;_.tab-indicator]:scale-100 [&amp;_.tab-icon]:fill-[1]" data-path="flats" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">apartment</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Flats</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="flatmates" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">group</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Flatmates</span></a><a class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-14 text-on-surface-variant transition-all" data-path="books" href="#"><div class="relative flex items-center justify-center"><span class="tab-icon material-symbols-outlined text-[22px] transition-transform">menu_book</span><span class="tab-indicator absolute -bottom-1 w-1 h-1 rounded-full bg-primary scale-0 transition-transform duration-200"></span></div><span class="font-label-sm text-[11px] font-medium leading-none">Books</span></a></div></nav></body></html>
